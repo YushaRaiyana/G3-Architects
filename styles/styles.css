@@ -178,11 +178,41 @@ gap: 24px;
     font-weight: 700;
     }                          
                                 
-                                
-                                
-                                
-                                
-                                
+                                          
+  /* Apar architecture er part */
+  #Title-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+  }
+  .feature-CARD{
+    padding: 34px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }       
+
+  .FEATURES{
+    gap: 140px;
+  }
+
+  .feature-CARD .feature-TITLE{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+  }
+  #Experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -80px;
+  }
+#Experience-Year{
+    font-size: 4rem;
+    font-weight: 700;
+}                             
                                 
     .facts-container{
     display: grid;
@@ -229,6 +259,15 @@ gap: 24px;
     grid-template-columns: repeat(5, 1fr)
 }
 
+.Fotter{
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #424242;
+}
+
 .sponsor-companies img{
     filter: grayscale(100%);
 }
@@ -244,7 +283,7 @@ gap: 24px;
 /* mEDIUM sIzee DeVIce */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams, .FEATURES{
         flex-direction: column;
     }
 .our-features{
@@ -256,9 +295,15 @@ gap: 24px;
     gap: 45px;
     justify-items: center;
 }
+#Experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
 
-
+.FEATURE-ARCHI img{
+    width: 100%;
+}
 
 
 
@@ -277,6 +322,16 @@ gap: 24px;
         justify-items: center;
         gap: 40px;
         
+    }
+    .FEATURES{
+        flex-direction: column;
+    }
+    .FEATURE-ARCHI{
+
+    }
+    #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
         
     }
